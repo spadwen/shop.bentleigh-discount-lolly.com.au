@@ -1,0 +1,538 @@
+/* Created by davidwen.net */
+
+.responsive body
+{
+   min-width: 240px;
+}
+  
+.responsive img 
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}  
+  
+.responsive .bdls-content-layout img,
+.responsive .bdls-content-layout video
+{
+   max-width: 100%;
+   height: auto !important;
+}
+
+.responsive.responsive-phone .bdls-content-layout img 
+{
+   margin: 1%;
+}
+
+.responsive.responsive-phone .bdls-collage,
+.responsive.responsive-tablet .bdls-collage {
+   margin: 0 !important;
+}
+
+.responsive .bdls-content-layout .bdls-sidebar0, 
+.responsive .bdls-content-layout .bdls-sidebar1, 
+.responsive .bdls-content-layout .bdls-sidebar2 
+{
+   width: auto !important;
+}
+    
+.responsive .bdls-content-layout, 
+.responsive .bdls-content-layout-row, 
+.responsive .bdls-layout-cell 
+{
+   display: block;
+}
+
+.responsive .bdls-content-layout, 
+.responsive .bdls-content-layout-row
+{
+   padding: 0;
+}
+    
+.responsive .image-caption-wrapper 
+{
+   width: auto;
+}
+
+.responsive.responsive-tablet .bdls-vmenublock,
+.responsive.responsive-tablet .bdls-block
+{
+   margin-left: 1%;
+   margin-right: 1%;
+   width: 48%;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .bdls-responsive-embed 
+{
+   height: 0;
+   padding-bottom: 56.25%;
+   /* 16:9 */
+    position: relative;
+}
+
+.responsive .bdls-responsive-embed iframe,
+.responsive .bdls-responsive-embed object,
+.responsive .bdls-responsive-embed embed
+{
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.responsive .bdls-sheet
+{
+   width: auto !important;
+   min-width: 240px !important;
+   max-width: none !important;
+   margin-right: 1% !important;
+   margin-left: 1% !important;
+   margin-top: 1% !important;
+}
+
+#bdls-resp {
+   display: none;
+}
+
+@media all and (max-width: 899px)
+{
+    #bdls-resp, #bdls-resp-t { display: block; }
+    #bdls-resp-m { display: none; }
+}
+
+@media all and (max-width: 480px)
+{
+    #bdls-resp, #bdls-resp-m { display: block; }
+    #bdls-resp-t { display: none; }
+}
+
+#bdls-resp-desktop {
+   display: none;
+}
+#bdls-resp-tablet-landscape {
+   display: none;
+}
+#bdls-resp-tablet-portrait {
+   display: none;
+}
+#bdls-resp-phone-landscape {
+   display: none;
+}
+#bdls-resp-phone-portrait {
+   display: none;
+}
+
+@media (min-width: 1200px)
+{
+    #bdls-resp-desktop { display: block; }
+}
+
+@media (min-width: 980px) and (max-width: 1199px)
+{
+    #bdls-resp-tablet-landscape { display: block; }
+}
+
+@media (min-width: 768px) and (max-width: 979px)
+{
+    #bdls-resp-tablet-portrait { display: block; }
+}
+
+@media (min-width: 480px) and (max-width: 767px)
+{
+    #bdls-resp-phone-landscape { display: block; }
+}
+
+@media (max-width: 479px)
+{
+    #bdls-resp-phone-portrait { display: block; }
+}
+.responsive .bdls-header 
+{
+   width: auto !important;
+   max-width: none !important;
+   min-height: 100px !important;
+   min-width: 0 !important;
+   text-align: center;
+}
+
+.default-responsive .bdls-header 
+{
+   height: auto;
+}
+
+.default-responsive .bdls-header *
+{
+   position: relative;
+   text-align: center;
+   -webkit-transform: none !important;
+   -moz-transform: none !important;
+   -o-transform: none !important;
+   -ms-transform: none !important;
+   transform: none !important;
+}
+
+.default-responsive .bdls-header .bdls-headline, 
+.default-responsive .bdls-header .bdls-slogan 
+{
+   display: block !important;
+   top: 0 !important;
+   left: 0 !important;
+   margin: 2% !important;
+   text-align: center !important;
+}
+    
+.default-responsive .bdls-header .bdls-headline a, 
+.default-responsive .bdls-header .bdls-slogan 
+{
+   white-space: normal !important;
+}
+
+.default-responsive .bdls-header .bdls-logo
+{
+   display: inline-block;
+   margin: auto !important;
+   left: auto;
+   top: auto !important;
+   width: auto;
+   height: auto;
+}
+
+.responsive .bdls-header .bdls-slidenavigator 
+{
+   position: absolute;
+}
+
+.default-responsive .bdls-header .bdls-positioncontrol 
+{
+   display: block !important;
+   position: relative !important;
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+   margin: 2% auto !important;
+   width: auto !important;
+   height: auto !important;
+}
+
+.responsive .bdls-header #bdls-flash-area
+{
+   display: none;
+}
+
+/* Search and other elements in header element directly */
+.default-responsive .bdls-header>.bdls-textblock
+{
+   position: relative !important;
+   display: block !important;
+   margin: 1% auto !important;
+   width: 75% !important;
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+}
+
+.default-responsive .bdls-header .bdls-textblock 
+{
+   position: relative !important;
+   display: block !important;
+   margin: auto !important;
+   left: 0 !important;
+   right: 0 !important;
+   top: auto !important;
+   height: auto !important;
+   width: auto;
+   background-image: none;
+}
+
+/* '.bdls-header *' used noram align, but for '.bdls-textblock *' we must force align because of preview */
+.responsive .bdls-header .bdls-textblock *
+{
+   text-align: center !important;
+}
+
+.default-responsive .bdls-header .bdls-shapes > .bdls-textblock,
+.default-responsive .bdls-header .bdls-slide-item > .bdls-textblock
+{
+   display: none !important;
+}
+
+.default-responsive .bdls-header .bdls-shapes > .bdls-textblock *
+{
+   text-align: center !important;
+   width: auto !important;
+   height: auto !important;
+   display: block;
+}
+
+.default-responsive .bdls-header .bdls-slider .bdls-textblock *
+{
+   text-align: center !important;
+   width: auto !important;
+   height: auto !important;
+   display: block;
+}
+
+/* For icons like facebook, rss, etc. */
+.responsive .bdls-header>.bdls-textblock>div 
+{
+   width: 100%;
+}
+/* dynamic width nav */
+.responsive nav.bdls-nav,
+.responsive .bdls-nav-inner
+{
+   width: auto !important;
+   position: relative !important;
+   top: auto !important;
+   left: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   margin-top: 0;
+   margin-bottom: 0;
+   min-width: 0;
+   text-align: right !important;
+}
+
+.responsive nav.bdls-nav
+{
+   min-width: 1%;
+}
+
+.responsive .bdls-nav 
+{
+   padding-left: 0;
+   padding-right: 0;
+   margin-top: 20px;
+}
+
+/* full width hmenu, instead of inline-block */
+.responsive .bdls-nav ul.bdls-hmenu 
+{
+   float: none;
+   text-align: center;
+   display: none;
+}
+
+/* elements on different lines */
+.responsive .bdls-nav ul.bdls-hmenu li,
+.responsive .bdls-hmenu-extra1,
+.responsive .bdls-hmenu-extra2
+{
+   float: none;
+}
+  
+/* horizontal margins */
+.responsive .bdls-nav ul.bdls-hmenu>li:first-child, 
+.responsive .bdls-nav ul.bdls-hmenu>li:last-child, 
+.responsive .bdls-nav ul.bdls-hmenu>li
+{
+   margin-left: 0;
+   margin-right: 0;
+}
+ 
+/* separator */ 
+.responsive .bdls-nav ul.bdls-hmenu>li:before
+{
+   display: none;
+}
+
+/* vertical distance between items */
+.responsive .bdls-nav ul.bdls-hmenu a
+{
+   margin-top: 1px !important;
+   margin-bottom: 1px !important;
+   height: auto;
+   white-space: normal;
+}
+
+.responsive .bdls-nav ul.bdls-hmenu>li:first-child>a
+{
+   margin-top: 0 !important;
+}
+
+.responsive .bdls-nav ul.bdls-hmenu>li:last-child>a
+{
+   margin-bottom: 0 !important;
+}
+
+/* fixes for extended menu */
+.responsive .bdls-nav .ext, 
+.responsive .bdls-nav ul.bdls-hmenu>li>ul, 
+.responsive .bdls-nav ul.bdls-hmenu>li>ul>li,
+.responsive .bdls-nav ul.bdls-hmenu>li>ul>li a
+{
+   width: auto !important;
+}
+
+/* submenu position on hover */
+.responsive .bdls-nav ul.bdls-hmenu ul
+{
+   left: auto !important;
+   right: auto !important;
+   top: auto !important;
+   bottom: auto !important;
+   display: none !important;
+   position: relative !important;
+   visibility: visible !important;
+}
+
+.responsive .bdls-nav ul.bdls-hmenu li.active>ul
+{
+   display: block !important;
+}
+.responsive .bdls-nav ul.bdls-hmenu ul li.active>a
+{
+   font-weight: bold;
+}
+
+.bdls-nav .bdls-menu-btn 
+{
+   border: 1px solid #404040;
+   border-radius: 3px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+   display: none;
+   -svg-background: linear-gradient(to bottom, #707070 0, #000 100%);
+   background: -ms-linear-gradient(top, #707070 0, #000 100%);
+   background: -moz-linear-gradient(top, #707070 0, #000 100%);
+   background: -o-linear-gradient(top, #707070 0, #000 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));
+   background: -webkit-linear-gradient(top, #707070 0, #000 100%);
+   background: linear-gradient(to bottom, #707070 0, #000 100%);
+   margin: 3px;
+   outline: none;
+   padding: 5px;
+   position: relative;
+   vertical-align: bottom;
+   width: 20px;
+}
+
+.bdls-nav .bdls-menu-btn span 
+{
+   background: #E0E0E0;
+   border-radius: 2px;
+   display: block;
+   height: 3px;
+   margin: 3px 1px;
+   position: relative;
+   -moz-transition: background .2s;
+   -o-transition: background .2s;
+   -webkit-transition: background .2s;
+   transition: background .2s;
+}
+
+.bdls-nav .bdls-menu-btn:hover span
+{
+   background: #f3f3f3;
+}
+
+.responsive .bdls-nav .bdls-menu-btn 
+{
+   display: inline-block;
+}
+
+.responsive .bdls-nav .bdls-hmenu.visible 
+{
+   display: block;
+}
+
+.responsive .bdls-nav ul.bdls-hmenu>li>ul>li:first-child:after 
+{
+   display: none;
+}
+.responsive .bdls-nav ul.bdls-hmenu ul a
+{
+   padding-left: 4% !important;
+}
+.responsive .bdls-nav ul.bdls-hmenu ul ul a
+{
+   padding-left: 6% !important;
+}
+.responsive .bdls-nav ul.bdls-hmenu ul ul ul a
+{
+   padding-left: 8% !important;
+}
+.responsive .bdls-nav ul.bdls-hmenu ul ul ul ul a
+{
+   padding-left: 10% !important;
+}
+.responsive .bdls-nav ul.bdls-hmenu ul ul ul ul ul a
+{
+   padding-left: 12% !important;
+}
+  
+.responsive .bdls-nav ul.bdls-hmenu>li>ul
+{
+   padding: 5px;
+}
+  
+.responsive .bdls-nav ul.bdls-hmenu>li>ul:before
+{
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.responsive .bdls-content-layout, 
+.responsive .bdls-content-layout-row, 
+.responsive .bdls-layout-cell 
+{
+   display: block;
+}
+
+.responsive .bdls-layout-cell 
+{
+   width: auto !important;
+   height: auto !important;
+}
+
+.responsive .bdls-content-layout:after, 
+.responsive .bdls-content-layout-row:after, 
+.responsive .bdls-layout-cell:after 
+{
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+.responsive .responsive-tablet-layout-cell,
+.responsive.responsive-tablet .bdls-footer .bdls-content-layout .bdls-layout-cell 
+{
+   margin: 1%;
+   width: 98% !important;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .responsive-layout-row-2 .responsive-tablet-layout-cell,
+.responsive.responsive-tablet .bdls-footer .bdls-content-layout .responsive-layout-row-2 .bdls-layout-cell
+{
+   width: 48% !important;
+}
+
+.responsive .responsive-layout-row-3 .responsive-tablet-layout-cell,
+.responsive.responsive-tablet .bdls-footer .bdls-content-layout .responsive-layout-row-3 .bdls-layout-cell
+{
+   width: 31% !important;
+}
+.responsive .bdls-post
+{
+   border-radius: 0;
+}
+
+.responsive .bdls-footer-inner
+{
+   min-width: 0;
+}
+

@@ -1,0 +1,128 @@
+/* Created by davidwen.net */
+
+.bdls-header, #bdls-header-bg, .bdls-layout-cell, .bdls-layout-wrapper, .bdls-footer, .bdls-nav, #bdls-hmenu-bg, .bdls-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.bdls-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.bdls-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#bdls-header-bg 
+{
+   display: none;
+}
+
+.bdls-hmenu>li, .bdls-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.bdls-hmenu, ul.bdls-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#bdls-hmenu-bg 
+{
+   display: none;
+}
+
+ul.bdls-hmenu>li:first-child {
+   padding-right:11px;
+}
+ul.bdls-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='bdls-hmenu-separator');
+}
+ul.bdls-hmenu>li>span.bdls-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -11px;
+   width: 11px;
+   height: 34px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.bdls-hmenu>li:first-child>span.bdls-hmenu-separator
+{
+   display:none;
+}
+
+ul.bdls-hmenu ul, .desktop-nav ul.bdls-hmenu>li.ext:hover>a{
+   background-color: #EFF2F5 !important;
+}
+
+.bdls-content-layout, .bdls-content-layout-row, .bdls-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.bdls-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.bdls-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.bdls-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.bdls-search>input[type="text"] 
+{
+   margin :0;
+}
+
+form.bdls-search
+{
+   zoom: 1;
+}
+.bdls-postheadericons span{
+   zoom: 1;
+}
+.bdls-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.bdls-content 
+{
+   width: auto;
+   float:none;
+}
+
